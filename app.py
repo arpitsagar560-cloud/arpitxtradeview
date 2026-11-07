@@ -1733,7 +1733,10 @@ def render_watchlist(category: str, active_symbol: str) -> None:
     snaps = load_snapshots(tuple(sym for sym, _, _ in items))
     for sym, name, cur in items:
         snap = snaps.get(sym) or {}
-        price, pct = snap.get("price"), snap.get("change_pct")        if price is None:
+        price, pct = snap.get("price"), snap.get("change_pct")
+
+if price is None:
+    continue
             label = f"⚪ {short_name(sym)} · unavailable"
         else:
             dot = "🟢" if (pct or 0) >= 0 else "🔴"
