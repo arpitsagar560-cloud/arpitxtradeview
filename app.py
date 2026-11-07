@@ -1,4 +1,4 @@
-i"""
+"""
 Arpit FinTech - TradingView-style PAPER trading terminal
 =========================================================
 
