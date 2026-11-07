@@ -1,4 +1,4 @@
-"""
+i"""
 Arpit FinTech - TradingView-style PAPER trading terminal
 =========================================================
 
@@ -1737,7 +1737,8 @@ def render_watchlist(category: str, active_symbol: str) -> None:
 
 if price is None:
     continue
-            label = f"⚪ {short_name(sym)} · unavailable"
+            label = f ⚪ {short_name(sym)} · unavailable
+
         else:
             dot = "🟢" if (pct or 0) >= 0 else "🔴"
             pct_text = f"{pct:+.2f}%" if pct is not None else "n/a"
